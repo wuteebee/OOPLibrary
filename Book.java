@@ -1,4 +1,3 @@
-package OOP;
 
 public class Book {
 	private String bookID;
@@ -7,11 +6,12 @@ public class Book {
 	private int inventoryByGenre;
 	private Boolean status;
 	private float value;
-	
-	//Constructor
-	Book() {};
-	Book(String bookID, String name, String genre, int inventoryByGenre, Boolean status, float value)
-	{
+
+	// Constructor
+	Book() {
+	};
+
+	Book(String bookID, String name, String genre, int inventoryByGenre, Boolean status, float value) {
 		this.bookID = bookID;
 		this.name = name;
 		this.genre = genre;
@@ -19,8 +19,8 @@ public class Book {
 		this.status = status;
 		this.value = value;
 	}
-	Book(Book A)
-	{ 
+
+	Book(Book A) {
 		A.bookID = bookID;
 		A.name = name;
 		A.genre = genre;
@@ -28,51 +28,34 @@ public class Book {
 		A.status = status;
 		A.value = value;
 	}
-	
-	void borrowed()
-	{ 
-		status = false;
-	}
-	
-	void returned()
-	{
-		status = true;
-	}
-	
-	String getBookID()
-	{ 
+
+	String getBookID() {
 		return bookID;
 	}
-	
-	String getName()
-	{ 
+
+	String getName() {
 		return name;
 	}
-	
-	String getGenre()
-	{ 
+
+	String getGenre() {
 		return genre;
 	}
-	
-	int getInventoryByGenre()
-	{ 
+
+	int getInventoryByGenre() {
 		return inventoryByGenre;
 	}
-	
-	Boolean getStatus()
-	{ 
+
+	Boolean getStatus() {
 		return status;
 	}
-	
-	float getValue()
-	{
+
+	float getValue() {
 		return value;
 	}
-	
-	String tostring()
-	{ 
-		String sstatus  = (status == true) ? "Available" : "Not Available";
-		String quantity = ""  + inventoryByGenre;
+
+	String tostring() {
+		String sstatus = (status == true) ? "Available" : "Not Available";
+		String quantity = "" + inventoryByGenre;
 		String price = "" + (int) value;
 		return bookID + ", " + name + ", " + genre + ", " + quantity + ", " + sstatus + ", " + price + "\n";
 	}
