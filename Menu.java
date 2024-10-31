@@ -28,7 +28,7 @@ public class Menu {
                     employeeMenu();
                     break;
                 case 4:
-
+                    clientMenu();
                     break;
                 default:
                     System.out.println("\nInvalid choice. Please try again:");
