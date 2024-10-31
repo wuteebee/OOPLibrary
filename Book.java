@@ -1,12 +1,12 @@
 package OOP;
 
 public class Book {
-	String bookID;
-	String name;
-	String genre;
-	int inventoryByGenre;
-	Boolean status;
-	float value;
+	private String bookID;
+	private String name;
+	private String genre;
+	private int inventoryByGenre;
+	private Boolean status;
+	private float value;
 	
 	//Constructor
 	Book() {};
